@@ -1,0 +1,18 @@
+/* Ensure navbar stays fixed */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Each page should occupy full screen */
+  .page-container {
+    margin-top: 60px; /* Adjust for fixed navbar */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  

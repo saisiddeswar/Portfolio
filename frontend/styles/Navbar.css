@@ -1,0 +1,97 @@
+/* LIGHT MODE STYLES */
+.light-mode {
+    background-color: white !important;
+    color: black !important;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .light-mode .navbar {
+    background-color: white !important;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .light-mode .nav-link {
+    color: black !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 16px;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .light-mode .nav-link:hover {
+    transform: scale(1.1);
+    color: #007bff !important;
+  }
+  
+  .light-mode .color-mode-toggle {
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .light-mode .color-mode-toggle:hover {
+    background: #e2e6ea;
+  }
+  
+  /* DARK MODE STYLES */
+  .dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dark-mode .navbar {
+    background-color: black !important;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dark-mode .nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 16px;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .dark-mode .nav-link:hover {
+    transform: scale(1.1);
+    color: #ffcc00 !important;
+  }
+  
+  .dark-mode .color-mode-toggle {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: #333;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .dark-mode .color-mode-toggle:hover {
+    background: #444;
+  }
+  
+  /* Navbar Brand */
+  .brand-name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Smooth Background Transition */
+  body {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  

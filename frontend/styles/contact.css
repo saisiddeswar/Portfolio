@@ -1,0 +1,97 @@
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  }
+  
+  .dark-mode .form-group input,
+  .dark-mode .form-group textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .light-mode .form-group input,
+  .light-mode .form-group textarea {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ffeb3b;
+  }
+  
+  .social-links i {
+    font-size: 24px;
+  }

@@ -1,0 +1,39 @@
+/* App.css */
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .projects-slider {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .slick-slide {
+    padding: 10px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #000;
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffeb3b;
+  }
+  
+  .dark-mode .projects-slider {
+    background-color: #121212;
+  }
+  
+  .dark-mode .slick-prev:before,
+  .dark-mode .slick-next:before {
+    color: #ffeb3b;
+  }
+  
+  /* Center the slider */
+  .slick-list {
+    margin: 0 auto;
+  }

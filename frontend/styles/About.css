@@ -1,0 +1,110 @@
+.about {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .about-text {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .animated {
+    position: relative;
+  }
+  
+  .animated-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    min-width: 450px;
+    position: relative;
+  }
+  
+  .animated-item {
+    color: #f92696;
+    font-size: 38px;
+    line-height: inherit;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: BottomTotop 8s linear infinite; /* Increased duration */
+  }
+  
+  .animated-item:nth-child(2n+2) {
+    animation-delay: 2s;
+  }
+  
+  .animated-item:nth-child(3n+3) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes BottomTotop {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    35% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .custom-btn-group {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 20px;  /* Add the desired gap between buttons */
+  }
+  
+  .custom-btn {
+    background-color: #f92696;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .custom-btn:hover {
+    background-color: #e1247d;
+  }
+  
+  .custom-btn-bg {
+    background-color: #2c3e50;
+  }
+  
+  .custom-btn-link {
+    background-color: transparent;
+    color: #f92696;
+    border: 1px solid #f92696;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px; /* Increased max-width for better scaling */
+    object-fit: cover; /* Ensures the image covers the container area without distortion */
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  

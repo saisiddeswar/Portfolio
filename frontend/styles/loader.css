@@ -1,0 +1,41 @@
+/* Full-screen black background */
+.loader-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Rustic glitchy white text */
+.loader-text {
+    font-size: clamp(2rem, 6vw, 5rem); /* Dynamic size */
+    font-family: 'Orbitron', sans-serif; /* Futuristic Gangster */
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1); /* Subtle glow */
+    opacity: 0;
+    transform: scale(1);
+    animation: flicker 4s infinite alternate, glitch 4s infinite alternate; /* Slowed down */
+}
+
+/* Flickering effect */
+@keyframes flicker {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* Glitch effect (slower for dramatic impact) */
+@keyframes glitch {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-3px, -3px); }
+    40% { transform: translate(3px, 3px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0, 0); }
+}
