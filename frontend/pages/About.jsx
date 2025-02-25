@@ -27,12 +27,12 @@ I am excited to continue building my skills and contribute to impactful projects
               </p>
               <div className="custom-btn-group mt-4">
                 <a
-                  href="https://drive.google.com/file/d/10JfKPj9VteGeio2oZ4D75a_Z1wFp0U8-/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1FuKPoy6WEzw1ZwvR7NmDsJpqmjLT1Xn1/view?usp=sharing"
                   className="btn mr-lg-2 custom-btn"
                 >
                   <i className="uil uil-file-alt"></i> Download Resume
                 </a>
-                <a href="https://bsugandhi.github.io/#contact" className="btn custom-btn custom-btn-bg custom-btn-link">
+                <a href="" className="btn custom-btn custom-btn-bg custom-btn-link">
                   Drop a message
                 </a>
               </div>

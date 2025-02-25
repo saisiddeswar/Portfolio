@@ -7,6 +7,7 @@ import Project from '../pages/Project';
 import Contact from '../pages/Contact';
 import Loader from '../pages/Loader';
 import { useState, useEffect } from "react";
+import Blog from '../pages/Blog';
 
 function App() {
   // Load dark mode state from localStorage
@@ -50,6 +51,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Project darkMode={darkMode} />} />
               <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+              <Route path="/blog" element={<Blog/>}/>
             </Routes>
           </div>
         </>

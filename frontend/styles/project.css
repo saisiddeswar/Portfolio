@@ -1,39 +1,125 @@
-/* App.css */
 .App {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .projects-slider {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  
-  .slick-slide {
-    padding: 10px;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    color: #000;
-  }
-  
-  /* Dark mode styles */
-  .dark-mode {
-    background-color: #121212;
-    color: #ffeb3b;
-  }
-  
-  .dark-mode .projects-slider {
-    background-color: #121212;
-  }
-  
-  .dark-mode .slick-prev:before,
-  .dark-mode .slick-next:before {
-    color: #ffeb3b;
-  }
-  
-  /* Center the slider */
-  .slick-list {
-    margin: 0 auto;
-  }
+  text-align: center;
+  padding: 20px;
+}
+
+.projects-slider {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffeb3b;
+}
+
+.dark-mode .projects-slider {
+  background-color: #121212;
+}
+
+.dark-mode .slick-prev:before,
+.dark-mode .slick-next:before {
+  color: #ffeb3b;
+}
+
+/* Center the slider */
+.slick-list {
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Added padding for better spacing */
+}
+
+/* Dark mode card styling */
+.dark-mode .project-card {
+  background: #1e1e1e; /* Dark background for cards */
+  color: #ffeb3b; /* Text color in dark mode */
+  border: 2px solid rgba(255, 235, 59, 0.1);
+}
+
+/* Hover Effects */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 235, 59, 0.7); /* Yellow border only on hover */
+}
+
+.dark-mode .project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Dark shadow effect */
+  border-color: rgba(255, 235, 59, 0.7); /* Yellow border only on hover */
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.dark-mode .project-image {
+  border-bottom: 2px solid rgba(255, 235, 59, 0.3);
+}
+
+/* Project Content */
+.project-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Added gap for proper spacing */
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Increased gap for spacing */
+  margin-top: 10px;
+}
+
+.live-link, .github-link {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.live-link {
+  background-color: #28a745;
+}
+
+.github-link {
+  background-color: #333;
+}
+
+.live-link:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.github-link:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
